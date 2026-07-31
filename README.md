@@ -2,7 +2,7 @@
 
 ## Portfolio Design Upgrade (Version 2.0)
 
-Redesign the portfolio with a unique, premium, and modern aesthetic. Do not imitate or replicate any existing portfolio. Create an original design with a focus on elegance, readability, and recruiter-friendly navigation.
+Design the portfolio with a unique, premium, and modern aesthetic. Do not imitate or replicate any existing portfolio. Create an original design with a focus on elegance, readability, and recruiter-friendly navigation.
 
 =========================================
 
