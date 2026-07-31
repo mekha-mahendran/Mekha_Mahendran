@@ -1,12 +1,12 @@
 export const profile = {
   name: "Mekha M",
   role: "Full Stack Developer",
-  tagline: "I build data-driven web products with Java, React and MongoDB.",
+  tagline: "I build data-driven web products with Java, React, Node and MongoDB.",
   location: "Tirupur, Tamil Nadu, India",
   email: "mekha.mahendran.38@gmail.com",
   phone: "+91 63859 01512",
-  github: "https://github.com/",
-  linkedin: "https://www.linkedin.com/",
+  github: "https://github.com/mekha-mahendran",
+  linkedin: "https://www.linkedin.com/in/mekha-mahendran-design/",
   objective:
     "Motivated BCA graduate with an 8.9 CGPA, proficient in Core Java, SQL, JDBC, MySQL, NodeJS and ReactJS. Eager to apply my technical skills, contribute to innovative software solutions, and continuously enhance my expertise through professional learning and development.",
 };
@@ -34,12 +34,12 @@ export const skillGroups: SkillGroup[] = [
   {
     title: "Backend",
     blurb: "APIs, auth and server-side logic.",
-    items: ["NodeJS", "Express.js", "JWT Authentication", "REST APIs"],
+    items: ["NodeJS", "JWT Authentication", "REST APIs"],
   },
   {
     title: "Database",
     blurb: "Modelling and querying data at scale.",
-    items: ["MySQL", "MongoDB", "Mongoose", "JDBC Connectivity", "Joins & Aggregations"],
+    items: ["MySQL", "MongoDB", "JDBC Connectivity", "Joins & Aggregations"],
   },
   {
     title: "Tools & Practices",
@@ -153,10 +153,10 @@ export const projects: Project[] = [
       "Timetable auto-generation",
       "Fee payment gateway integration",
     ],
-    github: "https://github.com/",
-    demo: "https://github.com/",
+    github: "https://github.com/mekha-mahendran/school-erp-ai",
+    demo: "https://school-erp-ai-ruddy.vercel.app/",
     accent: "primary",
-    year: "2025",
+    year: "2026",
     featured: true,
   },
   {
@@ -204,8 +204,8 @@ export const projects: Project[] = [
       "Scheduled report exports",
       "Role-based access to sensitive salary fields",
     ],
-    github: "https://github.com/",
-    demo: "https://github.com/",
+    github: "https://github.com/mekha-mahendran/employee-performance-analytics",
+    demo: "https://mekha-mahendran.github.io/employee-performance-analytics/",
     accent: "violet",
     year: "2025",
     featured: true,
@@ -278,7 +278,14 @@ export const education = [
     institution: "Saradha Vidhyalaya Matriculation Higher Secondary School, Tirupur",
     degree: "Higher Secondary Certificate (HSC)",
     result: "65.6%",
-    period: "2020 — 2023",
+    period: "2022 — 2023",
+    detail: "Secondary School Leaving Certificate (SSLC) completed with 80%.",
+  },
+  {
+    institution: "Saradha Vidhyalaya Matriculation Higher Secondary School, Tirupur",
+    degree: "Secondary School Leaving Certificate (SSLC)",
+    result: "65.6%",
+    period: "2020 — 2021",
     detail: "Secondary School Leaving Certificate (SSLC) completed with 80%.",
   },
 ];
