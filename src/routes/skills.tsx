@@ -19,7 +19,7 @@ export const Route = createFileRoute("/skills")({
       },
     ],
   }),
-  component: Skills;
+  component: Skills,
 });
 
 function Skills() {
