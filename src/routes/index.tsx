@@ -219,8 +219,8 @@ function Home() {
         <div className="grid gap-8 lg:grid-cols-2 lg:items-center">
           <SectionHeader
             eyebrow="Latest achievement"
-            title={achievements[0].title}
-            description={achievements[0].detail}
+            title={achievements[0]!.title}
+            description={achievements[0]!.detail}
           />
           <Reveal delay={0.1}>
             <Panel>
