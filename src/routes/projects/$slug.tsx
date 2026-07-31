@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight, ExternalLink, Github } from "lucide-react";
 import { Chip, PageTransition, Panel, Reveal, SectionHeader } from "@/components/ui-kit";
-import { projects } from "@/data/portfolio";
+import { projects, type Project } from "@/data/portfolio";
 
 export const Route = createFileRoute("/projects/$slug")({
   loader: ({ params }) => {
@@ -24,7 +24,7 @@ export const Route = createFileRoute("/projects/$slug")({
 });
 
 function ProjectDetail() {
-  const project = Route.useLoaderData();
+  const project = Route.useLoaderData() as Project;
   const related = projects.filter((p) => p.slug !== project.slug);
 
   return (
