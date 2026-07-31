@@ -13,6 +13,7 @@ import { Route as IndexRouteImport } from './routes/index'
 import { Route as AboutRouteImport } from './routes/about'
 import { Route as AchievementsRouteImport } from './routes/achievements'
 import { Route as CertificatesRouteImport } from './routes/certificates'
+import { Route as ContactRouteImport } from './routes/contact'
 import { Route as EducationRouteImport } from './routes/education'
 import { Route as ExperienceRouteImport } from './routes/experience'
 import { Route as ServicesRouteImport } from './routes/services'
@@ -38,6 +39,11 @@ const AchievementsRoute = AchievementsRouteImport.update({
 const CertificatesRoute = CertificatesRouteImport.update({
   id: '/certificates',
   path: '/certificates',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
   getParentRoute: () => rootRouteImport,
 } as any)
 const EducationRoute = EducationRouteImport.update({
@@ -76,6 +82,7 @@ export interface FileRoutesByFullPath {
   '/about': typeof AboutRoute
   '/achievements': typeof AchievementsRoute
   '/certificates': typeof CertificatesRoute
+  '/contact': typeof ContactRoute
   '/education': typeof EducationRoute
   '/experience': typeof ExperienceRoute
   '/services': typeof ServicesRoute
@@ -88,6 +95,7 @@ export interface FileRoutesByTo {
   '/about': typeof AboutRoute
   '/achievements': typeof AchievementsRoute
   '/certificates': typeof CertificatesRoute
+  '/contact': typeof ContactRoute
   '/education': typeof EducationRoute
   '/experience': typeof ExperienceRoute
   '/services': typeof ServicesRoute
@@ -101,6 +109,7 @@ export interface FileRoutesById {
   '/about': typeof AboutRoute
   '/achievements': typeof AchievementsRoute
   '/certificates': typeof CertificatesRoute
+  '/contact': typeof ContactRoute
   '/education': typeof EducationRoute
   '/experience': typeof ExperienceRoute
   '/services': typeof ServicesRoute
@@ -115,6 +124,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/achievements'
     | '/certificates'
+    | '/contact'
     | '/education'
     | '/experience'
     | '/services'
@@ -127,6 +137,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/achievements'
     | '/certificates'
+    | '/contact'
     | '/education'
     | '/experience'
     | '/services'
@@ -139,6 +150,7 @@ export interface FileRouteTypes {
     | '/about'
     | '/achievements'
     | '/certificates'
+    | '/contact'
     | '/education'
     | '/experience'
     | '/services'
@@ -152,6 +164,7 @@ export interface RootRouteChildren {
   AboutRoute: typeof AboutRoute
   AchievementsRoute: typeof AchievementsRoute
   CertificatesRoute: typeof CertificatesRoute
+  ContactRoute: typeof ContactRoute
   EducationRoute: typeof EducationRoute
   ExperienceRoute: typeof ExperienceRoute
   ServicesRoute: typeof ServicesRoute
@@ -188,6 +201,13 @@ declare module '@tanstack/react-router' {
       path: '/certificates'
       fullPath: '/certificates'
       preLoaderRoute: typeof CertificatesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/education': {
@@ -240,6 +260,7 @@ const rootRouteChildren: RootRouteChildren = {
   AboutRoute: AboutRoute,
   AchievementsRoute: AchievementsRoute,
   CertificatesRoute: CertificatesRoute,
+  ContactRoute: ContactRoute,
   EducationRoute: EducationRoute,
   ExperienceRoute: ExperienceRoute,
   ServicesRoute: ServicesRoute,
