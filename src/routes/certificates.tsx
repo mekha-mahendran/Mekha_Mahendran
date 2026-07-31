@@ -56,7 +56,13 @@ function CertificatesPage() {
                   href="/resume.pdf"
                   className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
                 >
-                  <Download className="h-4 w-4" /> Download certificate
+                  <Download className="h-4 w-4" /> Download resume
+                </a>
+                <a
+                  href="/certificate.pdf"
+                  className="mt-6 inline-flex items-center gap-2 rounded-full bg-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground transition-transform hover:-translate-y-0.5"
+                >
+                  <Download className="h-4 w-4" /> Download Certificate
                 </a>
               </Panel>
             </Reveal>
