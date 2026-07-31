@@ -82,15 +82,21 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Mekha M — Full Stack Developer" },
+      { title: "Mekha M — Full Stack Developer Portfolio" },
       {
         name: "description",
         content:
-          "Portfolio of Mekha M, full stack developer working with Java, React, Node.js, MySQL and MongoDB.",
+          "Full stack developer building data-driven web products with Java, React, Node.js, MySQL and MongoDB. BCA graduate, 8.9 CGPA, Coimbatore.",
       },
       { name: "author", content: "Mekha M" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "Mekha M — Full Stack Developer Portfolio" },
+      { name: "twitter:title", content: "Mekha M — Full Stack Developer Portfolio" },
+      { property: "og:description", content: "Full stack developer building data-driven web products with Java, React, Node.js, MySQL and MongoDB. BCA graduate, 8.9 CGPA, Coimbatore." },
+      { name: "twitter:description", content: "Full stack developer building data-driven web products with Java, React, Node.js, MySQL and MongoDB. BCA graduate, 8.9 CGPA, Coimbatore." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/11f7aa6f-feb8-429e-8fbd-b96a172b9673/id-preview-4460b637--ac823bee-c416-4532-861d-619addb2642a.lovable.app-1785505963082.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/11f7aa6f-feb8-429e-8fbd-b96a172b9673/id-preview-4460b637--ac823bee-c416-4532-861d-619addb2642a.lovable.app-1785505963082.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
@@ -100,7 +106,6 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500;600;700&family=Manrope:wght@600;700;800&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,

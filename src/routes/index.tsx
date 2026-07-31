@@ -23,7 +23,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Full stack developer building data-driven web products with Java, React, Node.js and MongoDB.",
+          "Full stack developer building data-driven web products with Java, React, Node.js, MySQL and MongoDB. BCA graduate, 8.9 CGPA, Coimbatore.",
       },
     ],
   }),
